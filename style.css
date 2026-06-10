@@ -273,8 +273,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-
-
   z-index: 0;
 }
 
@@ -411,7 +409,7 @@ body {
   width: 1595px;
   height: 953px;
   margin: 130px auto;
-  
+
   gap: 80px;
 }
 
@@ -474,7 +472,7 @@ body {
 }
 
 /* FAQ Title */
-.faq__card-header  h3{
+.faq__card-header h3 {
   font-family: Lexend;
   font-weight: 500;
   font-style: Medium;
@@ -547,10 +545,9 @@ body {
   opacity: 1;
 
   user-select: none;
-  
+
   z-index: 9999;
 }
-
 
 /*Footer*/
 .footer {
@@ -570,13 +567,11 @@ body {
   background: var(--background-container);
 }
 
-
 /* Logo & nav */
 .footer__header {
   width: 1596px;
   height: 117px;
   gap: 50px;
-
 
   display: flex;
   justify-content: center;
@@ -639,7 +634,7 @@ body {
   align-items: center;
   width: 1596px;
   height: 27px;
-  
+
   gap: 20px;
 
   border-top: 1px solid var(--color-border);
@@ -661,7 +656,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 6px;
-} 
+}
 
 .footer__bottom {
   width: 1596px;
@@ -676,7 +671,6 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: var(--color-border);
-
 
   display: flex;
   align-items: center;
@@ -748,27 +742,27 @@ body {
 
 @media (max-width: 1440px) {
   .navbar {
-  width: 1280px;
-  height: 73px;
-  top: 30px;
-  justify-content: space-between;
-  padding-top: 14px;
-  padding-right: 24px;
-  padding-bottom: 14px;
-  padding-left: 24px;
-  border-radius: 100px;
-  border-width: 1px;
+    width: 1280px;
+    height: 73px;
+    top: 30px;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-right: 24px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    border-radius: 100px;
+    border-width: 1px;
   }
 
   .navbar__logo {
-  font-size: 20px;
-  width: 116.87499237060547px;
-  height: 30px;
+    font-size: 20px;
+    width: 116.87499237060547px;
+    height: 30px;
   }
 
   .navbar__list {
-  width: 306px;
-  height: 41px;
+    width: 306px;
+    height: 41px;
   }
 
   .navbar__list a {
@@ -806,7 +800,7 @@ body {
   }
 
   .hero__container {
-    width: 100%; 
+    width: 100%;
     max-width: 1279px;
     height: 648px;
 
@@ -872,7 +866,7 @@ body {
   }
 
   .protection__list {
-    width: 100%;  
+    width: 100%;
     max-width: 1280px;
     height: 612px;
 
@@ -901,11 +895,7 @@ body {
     border: 1px solid var(--color-border);
 
     background:
-      linear-gradient(
-        267.5deg,
-        #1c1c1c 40.67%,
-        rgba(28, 28, 28, 0) 99.81%
-      ),
+      linear-gradient(267.5deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0) 99.81%),
       linear-gradient(
         106.06deg,
         rgba(202, 255, 51, 0.05) -29.45%,
@@ -1025,7 +1015,7 @@ body {
   }
 
   .faq-container__header {
-    width: 100%;  
+    width: 100%;
     max-width: 1279px;
     height: 91px;
     gap: 10px;
@@ -1198,11 +1188,11 @@ body {
   .footer__copyright {
     width: 195px;
     height: 21px;
-    
+
     font-family: Lexend;
     font-weight: 300;
     font-style: Light;
-    font-size: 14px;  
+    font-size: 14px;
   }
 
   .footer__policy {
@@ -1217,4 +1207,74 @@ body {
     padding-right: 8px;
     border-right: 1px solid var(--color-desc);
   }
+
+  @media (max-width: 390px) {
+    .navbar {
+      width: 358px;
+      height: 68px;
+
+      /* THAY DOI */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      /* THAY DOI */
+      margin: 40px auto 0;
+
+      border: 1px solid rgba(255, 255, 255, 0.1);
+
+      border-radius: 100px;
+
+      padding: 14px 14px 14px 24px;
+
+      box-sizing: border-box;
+    }
+
+    .navbar__logo {
+      width: 101.29px;
+      height: 26px;
+      flex-shrink: 0; /* THAY DOI */
+    }
+
+    .navbar__logo img {
+      width: 100%; /* THAY DOI */
+      height: 100%; /* THAY DOI */
+      object-fit: contain; /* THAY DOI */
+    }
+
+    /* THAY DOI */
+    .navbar__menu,
+    .navbar__actions {
+      display: none;
+    }
+
+    /* THAY DOI */
+    .header__menu-label {
+      width: 44px;
+      height: 40px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 100px;
+
+      background: #caff33;
+
+      cursor: pointer;
+    }
+
+    /* THAY DOI */
+    .header__menu-label i {
+      font-size: 24px;
+      color: #1c1c1c;
+    }
+
+    /* THAY DOI */
+    .header__menu-toggle {
+      display: none;
+    }
+  }
+
+  
 }

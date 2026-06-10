@@ -21,6 +21,10 @@
         <div class="navbar__logo">
           <img src="./img/Logo.png" alt="Logo YourBank" />
         </div>
+
+        <!-- Checkbox ẩn để điều khiển menu -->
+        <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
+
         <div class="navbar__menu">
           <ul class="navbar__list">
             <li><a href="#!">Home</a></li>
@@ -33,7 +37,29 @@
           <a class="navbar__link navbar__link--signup" href="#!">Sign Up</a>
           <a class="navbar__link navbar__link--login" href="#!">Login</a>
         </div>
+
+        <!-- Nút mở menu cho tablet/mobile -->
+        <label for="menu-toggle" class="header__menu-label">
+            <i class="mdi mdi-menu"></i>
+        </label>
       </nav>
+
+      <!-- Lớp phủ overlay -->
+      <label for="menu-toggle" class="mobile-menu__overlay"></label>
+
+      <!-- Sidebar cho menu tablet/mobile -->
+      <aside class="mobile-menu__sidebar">
+          <label for="menu-toggle" class="mobile-menu__close-btn">
+              <i class="mdi mdi-close"></i>
+          </label>
+
+          <ul class="mobile-menu__links">
+              <li><a href="#!">Home</a></li>
+              <li><a href="#!">Careers</a></li>
+              <li><a href="#!">About</a></li>
+              <li><a href="#!">Security</a></li>
+          </ul>
+      </aside>
     </header>
 
     <!-- Main content -->
