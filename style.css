@@ -153,7 +153,7 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 80px;
 
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .hero__content .hero__title {
@@ -1250,12 +1250,14 @@ body {
 
     /* THAY DOI */
     .header__menu-label {
-      width: 44px;
+      width: 56px;
       height: 40px;
 
       display: flex;
       justify-content: center;
       align-items: center;
+
+      padding: 6px 14px;
 
       border-radius: 100px;
 
@@ -1265,16 +1267,88 @@ body {
     }
 
     /* THAY DOI */
-    .header__menu-label i {
+    .header__menu-label svg {
+      display: block;
       font-size: 24px;
       color: #1c1c1c;
     }
 
-    /* THAY DOI */
+    /* Cho input ẩn */
     .header__menu-toggle {
       display: none;
     }
-  }
 
-  
+    /* Custom cho sidebar */
+    .mobile-menu__sidebar {
+      position: fixed;
+      top: 0;
+      right: -250px;
+
+      width: 230px;
+      height: 100vh;
+
+      background-color: var(--background-body);
+
+      padding: 30px;
+      transition: right .3s ease;
+      z-index: 9999;
+
+      box-shadow: -5px 0 20px rgba(0,0,0,.4);
+    }
+
+    /* icon close */
+    .mobile-menu__close-btn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+    }
+    .mobile-menu__close-btn .close-btn {
+      width: 20px;
+      height: 20px;
+      color: #caff33;
+      transition: transform .3s ease ;
+    }
+
+    .mobile-menu__close-btn .close-btn:hover {
+      transform: rotate(90deg);
+    }
+
+    /* Nút chức năng */
+    .mobile-menu__links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .mobile-menu__links a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .header__menu-toggle:checked ~ .mobile-menu__sidebar{
+      right: 0;
+    }
+
+    .mobile-menu__overlay {
+      position: fixed;
+      inset: 0;
+
+      background: rgba(0,0,0,.5);
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition: .3s;
+
+      z-index: 9998;
+    }
+
+    .header__menu-toggle:checked ~ .mobile-menu__overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
