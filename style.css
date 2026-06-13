@@ -123,6 +123,11 @@ body {
   border-radius: 82px;
 }
 
+.header__menu-label {
+  display: none;
+}
+
+/* Hero section */
 .hero__container {
   max-width: 1599px;
   width: 100%;
@@ -371,6 +376,7 @@ body {
   );
 }
 
+/* Vòng tròn ngoài */
 .protection__icon::after {
   width: 74px;
   height: 74px;
@@ -738,23 +744,6 @@ body {
 .footer__policy-link {
   padding-right: 12px;
   border-right: 1px solid var(--color-desc);
-}
-
-/* Cho input ẩn */
-.header__menu-toggle {
-  display: none;
-}
-
-.header__menu-label {
-  display: none;
-}
-
-.mobile-menu__close-btn {
-  display: none;
-}
-
-.mobile-menu__links {
-  display: none;
 }
 
 @media (max-width: 1440px) {
@@ -1440,6 +1429,180 @@ body {
       font-size: 14px;
       line-height: 150%;
       text-align: center;
+    }
+
+    /* Phần các thẻ */
+    .protection__container {
+      width: 100%;
+      max-width: 358px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .protection__container .protection__bg-img {
+      display: none;
+    }
+
+    .protection__header {
+      /* position: absolute; */
+      width: 100%;
+      max-width: 358px;
+
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 0;
+
+      gap: 10px;
+    }
+
+    .protection__header h2 {
+      width: 100%;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .protection__header p {
+      width: 100%;
+      font-size: 14px;
+
+      text-align: center;
+    }
+
+    .protection__list {
+      position: absolute;
+      width: 358px;
+      padding: 0;
+      margin-top: 150px;
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+
+    .protection__card {
+      display: flex;
+
+      width: 358px;
+      gap: 18px;
+      
+      padding: 24px;
+    }
+
+    /* Card -Header */
+    .protection__card-header {
+      width: 310px;
+      gap: 14px;
+    }
+
+    .protection__card-header h3 {
+      width: 228px;
+      font-size: 18px;
+    }
+
+    .protection__card p {
+      width: 310px;
+      height: 126px;
+      font-family: Lexend;
+      
+      font-size: 14px;
+    }
+
+    .protection__icon {
+      width: 68px;
+      height: 68px;
+    }
+
+    .protection__icon::before,
+    .protection__icon::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+
+    .protection__icon::before {
+      width: 52px;
+      height: 52px;
+      border-radius: 70px;
+      padding: 8px;
+      gap: 10px;
+    }
+
+    .protection__icon::after {
+      width: 68px;
+      height: 68px;
+      padding: 14px;
+      gap: 10px;
+    }
+
+    .protection__icon img {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* FAQ */
+    .faq-container {
+      width: 357px;
+      height: 1614px;
+      top: 440px;
+     
+      display: flex;
+      flex-direction: column;
+
+      gap: 50px;
+    }
+
+    .faq-container__header {
+      width: 357px;
+      height: 136px;
+      padding: 0;
+      margin: 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 10px;
+      text-align: center;
+    }
+
+    .faq-container__header .faq-title {
+      width: 357px;
+      height: 82px;
+      
+
+      font-size: 28px;
+    }
+
+    .protection__header p {
+      width: 100%;
+      height: 42px;
+      font-size: 14px;
+    }
+
+    .faq-container__list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 357px;
+      height: 1428px;
+
+      padding: 0;
+      gap: 20px;
+    }
+
+    .faq__card {
+      display: flex;
+
     }
   }
 }
