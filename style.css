@@ -15,7 +15,7 @@
 body {
   background-color: var(--background-body);
   font-family: "Lexend", sans-serif;
-  overflow-x: hidden;
+  position: relative;
 }
 
 .navbar {
@@ -485,7 +485,7 @@ body {
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #fff; /*doi lai thanh mau #fff*/
+  color: #fff;
 
   padding-bottom: 15px;
   border-bottom: 1px solid var(--color-border);
@@ -1592,6 +1592,7 @@ body {
     .faq-container__list {
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
       width: 100%;
       max-width: 357px;
       height: 1428px;
@@ -1602,7 +1603,48 @@ body {
 
     .faq__card {
       display: flex;
+      width: 357px;
+      height: 293px;
+      gap: 20px;
 
+      border-radius: 10px;
+      padding: 30px;
     }
+
+    .faq__card-header h3 {
+      font-size: 18px;
+    }
+
+    .faq__card-desc p {
+      font-size: 14px;
+    }
+
+    .faq__load-all {
+      width: 155px;
+      height: 49px;
+      gap: 4px;
+      border-radius: 100px;
+      border-width: 1px;
+      padding: 14px 20px;
+    }
+
+    .footer {
+      display: none;
+      /* flex-direction: column;
+
+      position: absolute;
+      
+
+      width: 390px;
+      height: 503px;
+      gap: 30px;
+
+      padding-top: 50px;
+      padding-right: 16px;
+      padding-bottom: 30px;
+      padding-left: 16px; */
+    }
+
+    
   }
 }
